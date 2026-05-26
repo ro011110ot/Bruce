@@ -37,32 +37,12 @@ static const uint8_t MISO = SPI_MISO_PIN;
 // I2C Bus (for external grove modules)
 // =============================================
 #define GROVE_SDA 8
-#define GROVE_SCL 9
+#define GROVE_SCL 15
 static const uint8_t SDA = GROVE_SDA;
 static const uint8_t SCL = GROVE_SCL;
 
 // =============================================
-// TFT Display (ILI9341 via FSPI)
-// =============================================
-#define USER_SETUP_LOADED
-#define ILI9341_DRIVER 1
-#define TFT_WIDTH 240
-#define TFT_HEIGHT 320
-#define TFT_MISO 13
-#define TFT_MOSI 11
-#define TFT_SCLK 12
-#define TFT_CS 10
-#define TFT_DC 7
-#define TFT_RST 9
-#define TFT_BL 38
-#define TFT_BACKLIGHT_ON HIGH
-#define SMOOTH_FONT 1
-#define TOUCH_CS -1
-#define SPI_FREQUENCY 40000000
-#define SPI_READ_FREQUENCY 20000000
-
-// =============================================
-// Display Setup
+// TFT Display — config is in .ini via -D flags
 // =============================================
 #define HAS_SCREEN 1
 #define ROTATION 1
